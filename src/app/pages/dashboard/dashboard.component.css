@@ -1,0 +1,38 @@
+mat-grid-tile {
+    background: lightblue;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+    gap: 1px; /* Adds space between the cards */
+    padding: 10px; /* Optional padding around the container */
+    justify-content: space-around; /* Space cards evenly */
+  }
+  
+  .elevation-card {
+    width: 380px; /* Set a fixed width for the cards */
+    height: 100px; /* Set a fixed height for the cards */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Elevation effect */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .elevation-card:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Elevation increase on hover */
+  }
+
+  .graph-div {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.graph-div p {
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: black !important;
+}
+
+  

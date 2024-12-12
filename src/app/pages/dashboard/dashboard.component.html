@@ -1,0 +1,75 @@
+<div class="card-container">
+    <!-- First Card -->
+    <mat-card class="elevation-card">
+        <mat-card-header>
+            <mat-icon mat-card-avatar>trending_up</mat-icon>
+            <mat-card-title>Revenue</mat-card-title>
+            <mat-card-subtitle>per year</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>This is the first card's content.</p>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- Second Card -->
+    <mat-card class="elevation-card">
+        <mat-card-header>
+            <mat-icon mat-card-avatar>trending_up</mat-icon>
+            <mat-card-title>Revenue</mat-card-title>
+            <mat-card-subtitle>per month</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>This is the second card's content.</p>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- Third Card -->
+    <mat-card class="elevation-card">
+        <mat-card-header>
+            <mat-icon mat-card-avatar>monetization_on</mat-icon>
+            <mat-card-title>Purchase</mat-card-title>
+            <mat-card-subtitle>per month</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>This is the third card's content.</p>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- Fourth Card -->
+    <mat-card class="elevation-card">
+        <mat-card-header>
+            <mat-icon mat-card-avatar>monetization_on</mat-icon>
+            <mat-card-title>Income</mat-card-title>
+            <mat-card-subtitle>per month</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>This is the fourth card's content.</p>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+
+
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile [colspan]="2" [rowspan]="2" [style.background]="'lightblue'">
+      <div class="graph-div">
+        <p>this is first grid</p>
+      </div>
+    </mat-grid-tile>
+  
+    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightgreen'">
+      <!-- Custom Card -->
+      <mat-card class="elevation-card">
+        <mat-card-title>Income</mat-card-title>
+        <mat-card-content>
+          <p>Total Income</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  
+    <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightpink'">
+      <!-- Custom Image -->
+      <img src="assets/images/sample-image.jpg" alt="Sample Image" style="width: 100%; height: 100%;">
+    </mat-grid-tile>
+  </mat-grid-list>
+  
