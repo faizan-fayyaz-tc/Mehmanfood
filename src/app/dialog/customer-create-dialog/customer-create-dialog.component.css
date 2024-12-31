@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.half-width {
+    flex: 1;
+}
+
+.full-width {
+    flex: 2;
+}
+
+mat-dialog-actions .close-button {
+    color: red;
+}
+/* mat-label{
+    color: rgb(9, 69, 9);
+} */

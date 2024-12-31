@@ -14,6 +14,10 @@ import { MatSelectModule } from '@angular/material/select';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule} from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 export const Material_Imports = [
   CommonModule,
@@ -33,4 +37,7 @@ export const Material_Imports = [
   MatFormFieldModule,
   MatSelectModule,
   MatGridListModule,
+  MatDialogModule,
+  ReactiveFormsModule,
+  MatTooltipModule
 ];

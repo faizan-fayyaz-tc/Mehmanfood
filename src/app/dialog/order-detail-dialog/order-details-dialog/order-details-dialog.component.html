@@ -1,0 +1,78 @@
+<div class="invoice-container">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="company-info">
+        <h1>Company Name</h1>
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Email: supportcompany.com</p>
+        <p>Phone: +123-456-7890</p>
+      </div>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Company Logo" />
+      </div>
+    </div>
+  
+    <hr />
+  
+    <!-- Billing Section -->
+    <div class="billing-section">
+      <div class="order-info">
+        <h3>Invoice To:</h3>
+        <p><strong>Name:</strong> {{ data.invoiceTo }}</p>
+        <p><strong>Phone:</strong> {{ data.phoneNumber }}</p>
+        <p><strong>Location:</strong> {{ data.location }}</p>
+      </div>
+      <div class="invoice-info">
+        <h3>Invoice Details:</h3>
+        <p><strong>Invoice No:</strong> {{ data.invoiceNo }}</p>
+        <p><strong>Date:</strong> {{ data.createdAt | date:'mediumDate' }}</p>
+      </div>
+    </div>
+  
+    <hr />
+  
+    <!-- Order Details Section -->
+    <div class="order-details">
+      <h3>Order Summary</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let detail of data.orderDetails; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ detail.product.productName }}</td>
+            <td>{{ detail.quantity }}</td>
+            <td>{{ detail.price | currency }}</td>
+            <td>{{ detail.totalPrice | currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <hr />
+  
+    <!-- Total Section -->
+    <div class="total-section">
+      <p><strong>Subtotal:</strong> {{ data.subTotalCost | currency }}</p>
+      <p><strong>Paid Amount:</strong> {{ data.paidAmount | currency }}</p>
+      <p><strong>Balance:</strong> {{ data.balance | currency }}</p>
+      <p><strong>Payment Status:</strong> {{ data.paymentStatus }}</p>
+    </div>
+  
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>Thank you for your business!</p>
+    </div>
+  </div>
+  
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+  </mat-dialog-actions>
+  

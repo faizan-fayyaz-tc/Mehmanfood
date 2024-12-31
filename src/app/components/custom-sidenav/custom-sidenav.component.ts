@@ -34,8 +34,18 @@ export class CustomSidenavComponent {
     },
     {
       icon: 'local_grocery_store',
+      label : 'Product',
+      route : 'product'
+    },
+    {
+      icon: 'local_grocery_store',
       label : 'Order',
       route : 'order'
+    },
+    {
+      icon: 'person',
+      label : 'Customer',
+      route : 'customer'
     },
     {
       icon: 'video_library',
@@ -46,7 +56,8 @@ export class CustomSidenavComponent {
       icon: 'comment',
       label : 'Comment',
       route : 'comment'
-    }
+    },
+    
   ]);
 
   profilePicSize = computed(()=>this.sideNavCollapsed() ? '32' : '100');
