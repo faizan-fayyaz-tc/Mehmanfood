@@ -1,0 +1,38 @@
+<div class="invoice">
+    <div class="header">
+        <!-- <img src="assets/company-logo.png" alt="Company Logo" class="logo"> -->
+        <h1>Invoice</h1>
+        <p><strong>Company Name:</strong> Your Company</p>
+        <p><strong>Address:</strong> Company Address</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+    </div>
+
+    <div class="customer-info">
+        <h2>Customer Details</h2>
+        <p><strong>Name:</strong> {{ order?.invoiceTo }}</p>
+        <p><strong>Phone:</strong> {{ order?.phoneNumber }}</p>
+        <p><strong>Location:</strong> {{ order?.location }}</p>
+    </div>
+
+    <div class="order-info">
+        <h2>Order Details</h2>
+        <table>
+            <tr>
+                <th>Invoice No</th>
+                <th>Total Cost</th>
+                <th>Paid Amount</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td>{{ order?.invoiceNo }}</td>
+                <td>{{ order?.subTotalCost }}</td>
+                <td>{{ order?.paidAmount }}</td>
+                <td>{{ order?.balance }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for your business!</p>
+    </div>
+</div>

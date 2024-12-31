@@ -1,0 +1,65 @@
+<h2 mat-dialog-title>{{isEditMode ? 'Edit Customer' : 'Add New Customer'}}</h2>
+<mat-dialog-content>
+  <div class="container">
+    <form [formGroup]="customerForm">
+      <div class="row">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Customer Name</mat-label>
+          <input matInput formControlName="fullName" placeholder="Customer Name" class="input-field">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Phone Number</mat-label>
+          <input matInput formControlName="phoneNumber" placeholder="+92 (XXX) XXX-XXXX">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="email@address.com" formControlName="email">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Address</mat-label>
+          <textarea matInput rows="3" placeholder="write complete address!.." formControlName="address"></textarea>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Preffered Contact No</mat-label>
+          <input matInput formControlName="preferredContactMethod" placeholder="+92 (XXX) XXX-XXXX">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Is Active</mat-label>
+          <input matInput formControlName="isActive">
+        </mat-form-field>
+
+        <!-- <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Is Active</mat-label>
+          <mat-slide-toggle formControlName="isActive"></mat-slide-toggle>
+        </mat-form-field> -->
+      </div>
+
+      <div class="row">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Notes</mat-label>
+          <textarea matInput rows="3" placeholder="write custom comments!.." formControlName="notes"></textarea>
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close class="close-button">
+    <mat-icon>close</mat-icon> Close
+  </button>
+  <button mat-raised-button color="success" [mat-dialog-close]="true" cdkFocusInitial (click)="onSave()">
+    <mat-icon>{{isEditMode ? 'edit' : 'save'}}</mat-icon> {{isEditMode ? 'Edit' : 'Save'}}
+  </button>
+</mat-dialog-actions>

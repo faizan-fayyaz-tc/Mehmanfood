@@ -1,0 +1,175 @@
+.bg-grey {
+    background-color: rgb(232, 230, 230);
+    color: black;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    text-align: center; /* Center-align the text in the headers */
+    background-color: #051c06; /* Green background color */
+    color: #006400; /* White text for contrast */
+    font-weight: bold; /* Bold text */
+    font-size: medium;
+    padding: 10px; /* Add padding for spacing */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font */
+}
+
+td {
+    text-align: center; /* Center-align the text in the table cells */
+    padding: 10px; /* Add padding for spacing */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words */
+    overflow: hidden; /* Hide overflowed content */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row background color */
+}
+
+tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+}
+
+.mat-elevation-z3 {
+    border-radius: 10px; /* Round corners for the card */
+    overflow: hidden; /* Ensure the table stays within the card */
+}
+
+mat-card {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for the card */
+}
+
+.fixed-id-column {
+    width: 3%; /* 10% width for short columns like CustomerId */
+}
+.fixed-isActive-column {
+    width: 10%; /* 10% width for short columns like CustomerId */
+}
+
+.fixed-phoneNo-column {
+    width: 10%; /* 10% width for short columns like CustomerId */
+}
+
+.fixed-contactNo-column{
+    width: 12%;
+}
+
+.fixed-actionBtn-column{
+    width: 10%;
+}
+
+.custom-edit-btn{
+    background-color: #1e64e4;
+    color: white;
+}
+
+.custom-delete-btn{
+    background-color: #D32F2F;
+    color: #ffffff;
+}
+
+.custom-view-btn{
+    background-color: #006400;
+    color: white;
+}
+
+.custom-actions-btn{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.rounded-button {
+    border-radius: 20px; 
+    padding: 0.5rem 1.5rem; 
+    font-size: 14px; 
+  }
+  
+  .rounded-button:hover {
+    filter: brightness(0.9); 
+  }
+  
+  .rounded-button:active {
+    transform: scale(0.98); 
+  }
+
+  .custom-hover-sort-btn {
+    color: white !important; 
+    background-color: gray !important; 
+}
+
+.custom-hover-add-new-btn {
+    color: white !important; 
+    background-color: #1e64e4 !important; 
+}
+
+.custom-hover-excel-btn {
+    color: white !important; /* Default text color */
+    background-color: #006400 !important; /* Default background color */
+}
+
+
+
+
+
+
+
+
+
+
+  /* .custom-hover-sort-btn:hover{
+    background-color: gray;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-hover-sort-btn:active {
+    background-color: gray; 
+  }
+
+  .custom-hover-add-new-btn:hover {
+    background-color: #1e64e4; 
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-hover-add-new-btn:active {
+    background-color: #2078e2;
+  }
+
+  .custom-hover-excel-btn:hover{
+    background-color: #006400;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-hover-excel-btn:active {
+    background-color: #01580d; 
+  } */
+
+  
+  
+  
+  
